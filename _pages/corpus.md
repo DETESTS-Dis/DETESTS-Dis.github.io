@@ -12,6 +12,8 @@ related_publications: true
 
 [training data](https://github.com/clic-ub/DETESTS-Dis/blob/main/training_data.zip)
 
+[level4 context table](https://github.com/clic-ub/DETESTS-Dis/blob/main/level4_table.zip)
+
 The DETESTS-Dis dataset consists of two text genres: comments on news articles (DETESTS) and posts on
 Twitter reacting to hoaxes (StereHoax-ES) about the integration of immigrants.
 
