@@ -10,9 +10,11 @@ related_publications: true
 
 [README.md](https://github.com/clic-ub/DETESTS-Dis/blob/main/README.md)
 
-[training data](https://github.com/clic-ub/DETESTS-Dis/blob/main/training_data.zip)
+[training data](https://github.com/clic-ub/DETESTS-Dis/blob/main/data/training_data.zip)
 
-[level4 context table](https://github.com/clic-ub/DETESTS-Dis/blob/main/level4_table.zip)
+[test data](https://github.com/clic-ub/DETESTS-Dis/blob/main/data/test.zip)
+
+[level4 context table](https://github.com/clic-ub/DETESTS-Dis/blob/main/data/level4_table.zip)
 
 The DETESTS-Dis dataset consists of two text genres: comments on news articles (DETESTS) and posts on
 Twitter reacting to hoaxes (StereHoax-ES) about the integration of immigrants.
@@ -77,20 +79,20 @@ articles collected in 2023 in order to balance the test set for textual genre.
 The **StereHoax-ES dataset** contains tweets retrieved from Twitter in 2021 reacting to hoaxes published
 online that aim to disseminate false news against immigrants in Spain. These tweets were collected also
 taking into account their conversational thread. From 449 conversational heads, we retrieved a total of
-5,349 tweets.
+5,349 tweets. 
 {: style="text-align: justify;"}
 
 This corpus was created within the framework of the
 [STERHEOTYPES project](https://www.irit.fr/sterheotypes/) (Bourgeade et al., 2023), which brings together
 international research units based in Italy, France, and Spain. The corpus used for the second edition of
-DETESTS is the Spanish part of the StereHoax multilingual dataset.
+DETESTS is the Spanish part of the StereHoax multilingual dataset. 
 {: style="text-align: justify;"}
 
 The collection of these tweets started with the manual identification of 72 anti-immigrant hoaxes on
 debunking websites like maldita.es and newtral.es. Using the titles, keywords, and contents of the
 hoaxes, we searched for them on Twitter using the Twitter APIs v2 for Academia, collecting conversations
 related to them. The conversational thread is represented by a conversational head (the tweet starting
-the conversation), direct replies and replies to replies.
+the conversation), direct replies and replies to replies. 
 {: style="text-align: justify;"}
 
 The annotation of these tweets focuses on the identification of the presence of stereotypes in the tweet,
@@ -100,19 +102,19 @@ implicit or explicit. The annotation process involved three annotators (two ling
 for this task and a researcher) with a substantial agreement on the presence of stereotypes (0.75) and a
 slight agreement on implicitness (0.15). For the aggregated form of this dataset, the cases of
 disagreements were discussed; however, this corpus will also be released in its disaggregated form like
-the DETESTS dataset.
+the DETESTS dataset. 
 {: style="text-align: justify;"}
 
 ## Provided data
 
 We will provide participants with 82% of the DETESTS-Dis dataset to train their models, while the
-remaining 18% will be used to test them. The training set will consist of the following columns:
+remaining 18% will be used to test them. The training set will consist of the following columns: 
 {: style="text-align: justify;"}
 
 - _source_ = {"detests", "stereohoax"}
 - _id_ = unique identifier
 - _comment_id_ = comment identifier
-- _text_ = sentence or tweet 
+- _text_ = sentence or tweet
 - _level1_ = previous sentece, refers to "id" (only if source="detests")
 - _level2_ = previous tweet or comment, refers to "comment_id"
 - _level3_ = first tweet or comment, refers to "comment_id"
@@ -138,10 +140,9 @@ available for academic purposes only, and participants therefore will access the
 filling in an online form published on the task website, and by accepting the
 [task's terms and conditions](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode), including the
 commitment not to redistribute the dataset. It is important to note that user data is not disclosed,
-since all data will be anonymized by removing all personal information such as @user and generating
-new IDs for the texts coming from Twitter.
+since all data will be anonymized by removing all personal information such as @user and generating new
+IDs for the texts coming from Twitter. 
 {: style="text-align: justify;"}
-
 
 ## References
 
