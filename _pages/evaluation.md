@@ -34,8 +34,8 @@ An example of the evaluation can be found in [Examples.ipynb](https://github.com
 
 For both subtasks 1 and 2, we will use non-informative baselines that classify all instances as either
 the majority or the minority classes (all-ones and all-zeros). Furthermore, we also use a random
-classifier, a Term Frequency-Inverse Document Frequency (TFIDF) with Support Vector Machine (SVM), and a
-fine-tuned BERT model (Cañete et al. 2020).
+classifier, a Term Frequency-Inverse Document Frequency (TFIDF) with Support Vector Machine (SVM),
+Fast Text embedding with SVM, and a fine-tuned BERT model (Cañete et al. 2020).
 The baselines and code to produce them can be found at [clic-ub/DETESTS-Dis](https://github.com/clic-ub/DETESTS-Dis)
 {: style="text-align: justify;"}
 
@@ -48,7 +48,7 @@ The baselines and code to produce them can be found at [clic-ub/DETESTS-Dis](htt
 > Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long
 > Papers) (pp. 5809-5819).
 >
-> Cañete, J., Chaperon, G., Fuentes, R., Ho, J. H., Kang, H., & Pérez, J. (2023). Spanish pre-trained
+> Cañete, J., Chaperon, G., Fuentes, R., Ho, J. H., Kang, H., & Pérez, J. (2020). Spanish pre-trained
 > bert model and evaluation data. In PML4DC at ICLR 2020.
 >
 > Costa, E. P., Lorena, A. C., Carvalho A. C. P. L. F. & Freitas A. (2007). A review of performance
