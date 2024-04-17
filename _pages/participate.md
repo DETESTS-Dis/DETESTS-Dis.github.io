@@ -27,8 +27,6 @@ the name of the file should be:
 
 **TeamName_t1_hard_run1.json**
 
-## Submission format
-
 The ZIP file containing the relevant runs should be submitted till April 29th to the following email address:
 
 **detests.iberlef@gmail.com**
