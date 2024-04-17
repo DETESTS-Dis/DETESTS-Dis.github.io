@@ -7,6 +7,9 @@ nav: true
 nav_order: 4
 ---
 
+Teams will be allowed (and encouraged) to submit multiple runs (max. 3). for each subtask and type of labels (total max. of 12 runs).
+{: style="text-align: justify;"}
+
 The submission format shall follow the examples provided in [data/sample](https://github.com/clic-ub/DETESTS-Dis/tree/main/data/sample).
 [Examples.ipynb](https://github.com/clic-ub/DETESTS-Dis/blob/main/Examples.ipynb) shows how to transform the predictions to the appropiate format, as well as en example of the official evaluation metrics.
 {: style="text-align: justify;"}
