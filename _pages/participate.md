@@ -14,7 +14,7 @@ Teams will be allowed (and encouraged) to submit multiple runs (max. 3) for each
 
 The submission format shall follow the examples provided in [data/sample](https://github.com/clic-ub/DETESTS-Dis/tree/main/data/sample).
 [Examples.ipynb](https://github.com/clic-ub/DETESTS-Dis/blob/main/Examples.ipynb) shows how to transform the predictions to the appropiate format, as well as en example of the official evaluation metrics.
-The participants should provide an output file in json format reporting:
+The participants should provide an output file in JSON format reporting:
 - The name of the team
 - The addressed subtask (t1 or t2)
 - The use of _hard_ or _soft_ labels
