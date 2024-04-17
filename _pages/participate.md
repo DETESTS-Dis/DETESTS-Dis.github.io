@@ -7,7 +7,9 @@ nav: true
 nav_order: 4
 ---
 
-Information about the submission of results and their format will be available on Google groups.
+The submission format shall follow the examples provided in [data/sample](https://github.com/clic-ub/DETESTS-Dis/tree/main/data/sample).
+[Examples.ipynb](https://github.com/clic-ub/DETESTS-Dis/blob/main/Examples.ipynb) shows how to transform the predictions to the appropiate format, as well as en example of the official evaluation metrics.
+{: style="text-align: justify;"}
 
 We invite potential participants to subscribe to our
 [Google Groups](https://groups.google.com/u/1/g/detests-dis) in order to be kept up to date with the
