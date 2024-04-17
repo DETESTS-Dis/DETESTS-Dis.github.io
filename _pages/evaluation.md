@@ -39,9 +39,6 @@ fine-tuned BERT model (Cañete et al. 2020).
 The baselines and code to produce them can be found at [clic-ub/DETESTS-Dis](https://github.com/clic-ub/DETESTS-Dis)
 {: style="text-align: justify;"}
 
-Teams will be allowed (and encouraged) to submit multiple runs (max. 3). for each subtask and type of labels (total max. of 12 runs).
-{: style="text-align: justify;"}
-
 ## References
 
 {: style="font-size: 12px; background-color: #9dd7d124; color: #336b85; padding: 10px; border-radius:

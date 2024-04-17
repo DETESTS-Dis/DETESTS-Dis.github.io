@@ -13,13 +13,6 @@ classification problem. That is, firstly, to detect whether a text contains a st
 whether the stereotype is expressed explicitly or implicitly:
 {: style="text-align: justify;"}
 
-
-This task is designed in a hierarchical fashion by chaining two subtasks and allowing participants to
-either model the simple binary scenario or complete the entire pipeline by identifying a second binary
-classification problem. That is, firstly, to detect whether a text contains a stereotype, and secondly,
-whether the stereotype is expressed explicitly or implicitly:
-{: style="text-align: justify;"}
-
 - **Subtask 1, stereotype Identification**: This is a binary classification task the aim of which is to
   determine whether a comment or sentence contains at least one stereotype or none, considering the full
   distribution of labels provided by the annotators. This subtask follows the SemEval 2021 Task 12 (Uma
