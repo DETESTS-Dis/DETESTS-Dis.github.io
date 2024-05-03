@@ -49,7 +49,14 @@ IberLEF 2024, September 2024, Valladolid, Spain.}}
 
 - Please cite the overview paper of DETESTS-Dis in your respective work. The overviews will appear in the SEPLN journal (volumen 73, Septiembre 2024). The reference will be **announced soon.**
 
-- Please, check the papers for text reuse/plagiarism. We would like to stress this point as CEUR is quite strict about it. Any paper found with plagiarized content will be rejected without further consideration.
+- Please, check the papers for text reuse/plagiarism. We would like to stress this point as CEUR is quite strict about it. Any paper found with plagiarized content will be rejected without further consideration. Also consider the [ACL 2023 Policy on AI Writing Assistance](https://2023.aclweb.org/blog/ACL-2023-policy/). The use of AI writing should be limited to the following cases:
+    - Assistance purely with the language of the paper, e.g., paraphrasing, spell-checking, or polishing the author’s original content, without suggesting new content.
+    - Short-form input assistance, e.g., smart compose in google docs, which generates a short continuation of text.
+    - Literature search, e.g., to identify relevant literature, which authors then read, discuss, and cite appropriately.
+
+    Other uses have to be explicitly mentioned in the paper.
+
+
 
 ## Submission format
 
