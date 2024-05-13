@@ -26,15 +26,16 @@ An example of the evaluation can be found in [Examples.ipynb](https://github.com
 {: style="text-align: justify;"}
 
 For both subtasks 1 and 2, we will use non-informative baselines that classify all instances as either
-the majority or the minority classes (all-ones and all-zeros). Furthermore, we also use a random
-classifier, a Term Frequency-Inverse Document Frequency (TFIDF) with Support Vector Machine (SVM),
-Fast Text embedding with SVM, and a fine-tuned BERT model (Cañete et al. 2020).
+the majority or the minority classes ("BASELINE_all_ones" and "BASELINE_all_zeros"). Furthermore, we also use a random
+classifier "BASELINE_random_classifier", a Term Frequency-Inverse Document Frequency (TFIDF) with Support Vector Classifier (SVC) "BASELINE_tfidf_svc",
+Fast Text embedding with SVC "BASELINE_fast_text_svc", and a fine-tuned BERT model (Cañete et al. 2020) "BASELINE_beto".
 The baselines and code to produce them can be found at [clic-ub/DETESTS-Dis](https://github.com/clic-ub/DETESTS-Dis)
 {: style="text-align: justify;"}
 
 # Results
 
 ## Task 1 with Hard Labels
+
 
 |   Rank |   | Run                        |   |    F1 |
 |:-------|---|:---------------------------|---|------:|
@@ -48,17 +49,18 @@ The baselines and code to produce them can be found at [clic-ub/DETESTS-Dis](htt
 |      7 |   | EUA_1                      |   | 0.653 |
 |      8 |   | UC3M-SAS_2                 |   | 0.641 |
 |      9 |   | TaiDepZai999_UIT_AIC_1     |   | 0.630 |
-|     10 |   | UC3M-SAS_1                 |   | 0.594 |
-|     11 |   | BASELINE_all_ones          |   | 0.589 |
-|     12 |   | BASELINE_beto_2_models     |   | 0.589 |
-|     13 |   | VINE Bias Busters_1        |   | 0.581 |
-|     14 |   | VINE Bias Busters_2        |   | 0.552 |
-|     15 |   | VINE Bias Busters_3        |   | 0.545 |
-|     16 |   | I2C-Huelva_3               |   | 0.375 |
-|     17 |   | BASELINE_tfidf_svc         |   | 0.297 |
-|     18 |   | BASELINE_random_classifier |   | 0.297 |
-|     19 |   | BASELINE_fast_text_svc     |   | 0.297 |
-|     20 |   | BASELINE_all_zeros         |   | 0.000 |
+|     10 |   | TaiDepZai999_UIT_AIC_3     |   | 0.624 |
+|     11 |   | TaiDepZai999_UIT_AIC_2     |   | 0.608 |
+|     12 |   | UC3M-SAS_1                 |   | 0.594 |
+|     13 |   | BASELINE_all_ones          |   | 0.589 |
+|     14 |   | VINE Bias Busters_1        |   | 0.581 |
+|     15 |   | VINE Bias Busters_2        |   | 0.552 |
+|     16 |   | VINE Bias Busters_3        |   | 0.545 |
+|     17 |   | I2C-Huelva_3               |   | 0.375 |
+|     18 |   | BASELINE_tfidf_svc         |   | 0.297 |
+|     19 |   | BASELINE_random_classifier |   | 0.297 |
+|     20 |   | BASELINE_fast_text_svc     |   | 0.297 |
+|     21 |   | BASELINE_all_zeros         |   | 0.000 |
 
 <br><br>
 
