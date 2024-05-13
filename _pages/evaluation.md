@@ -14,18 +14,11 @@ classification metric **F1**. The second evaluation metric will be the **cross-e
 soft label values and the soft labels generated from the annotators average votes.
 {: style="text-align: justify;"}
 
-**Subtask 2** is a binary hierarchical classification problem. Since the appropriateness of evaluation
-metrics for such task is still an open issue, we will consider three metrics:
-
-- The **ICM metric** (Amigó and Delgado, 2022), an information theoretic based metric which
+**Subtask 2** is a binary hierarchical classification problem. We will use
+  the **ICM metric** (Amigó and Delgado, 2022), an information theoretic based metric which
   considers both the hierarchical structure and the class specificity. It is applicable to both hard and
   soft labels. **The ICM metric will be the official metric considered for the ranking for both hard labels (ICM)
   and soft labels (ICM Soft).**
-- **Hierarchical F measure** (Costa et al. 2007), which combines for each sample (sentence/post) the
-  precision and recall between label sets and their ancestors, only applicable to hard labels.
-- **Propensity F-measure** (Jain et al. 2016), which combines for each sample (sentence/post) the
-  precision and recall of label sets (without considering ancestors) with an additional factor to
-  consider the specificity of classes (frequency), only applicable to hard labels.
 {: style="text-align: justify;"}
 
 The implementation of the official metrics (F1, cross-entropy and ICM) will be based on [PyEvALL](https://github.com/UNEDLENAR/PyEvALL).
@@ -39,6 +32,80 @@ Fast Text embedding with SVM, and a fine-tuned BERT model (Cañete et al. 2020).
 The baselines and code to produce them can be found at [clic-ub/DETESTS-Dis](https://github.com/clic-ub/DETESTS-Dis)
 {: style="text-align: justify;"}
 
+# Results
+
+## Task 1 with Hard Labels
+
+|   Rank | Run                        |    F1 |
+|-------:|:---------------------------|------:|
+|      0 | BASELINE_gold_standard     | 1.000 |
+|      1 | Brigada Lenguaje_1         | 0.724 |
+|      2 | I2C-Huelva_1               | 0.712 |
+|      3 | I2C-Huelva_2               | 0.701 |
+|      4 | EUA_2                      | 0.691 |
+|      5 | EUA_3                      | 0.685 |
+|      6 | BASELINE_beto              | 0.663 |
+|      7 | EUA_1                      | 0.653 |
+|      8 | UC3M-SAS_2                 | 0.641 |
+|      9 | TaiDepZai999_UIT_AIC_1     | 0.630 |
+|     10 | UC3M-SAS_1                 | 0.594 |
+|     11 | BASELINE_all_ones          | 0.589 |
+|     12 | BASELINE_beto_2_models     | 0.589 |
+|     13 | VINE Bias Busters_1        | 0.581 |
+|     14 | VINE Bias Busters_2        | 0.552 |
+|     15 | VINE Bias Busters_3        | 0.545 |
+|     16 | I2C-Huelva_3               | 0.375 |
+|     17 | BASELINE_tfidf_svc         | 0.297 |
+|     18 | BASELINE_random_classifier | 0.297 |
+|     19 | BASELINE_fast_text_svc     | 0.297 |
+|     20 | BASELINE_all_zeros         | 0.000 |
+
+## Task 1 with Soft Labels
+
+|   Rank | Run                    |   Cross Entropy |
+|-------:|:-----------------------|----------------:|
+|      0 | BASELINE_gold_standard |           0.255 |
+|      1 | UC3M-SAS_1             |           0.841 |
+|      2 | EUA_2                  |           0.850 |
+|      3 | UC3M-SAS_2             |           0.865 |
+|      4 | BASELINE_beto          |           0.893 |
+|      5 | Brigada Lenguaje_1     |           0.938 |
+|      6 | Brigada Lenguaje_2     |           0.979 |
+|      7 | EUA_3                  |           1.081 |
+|      8 | EUA_1                  |           1.409 |
+
+## Task 2 with Hard Labels
+
+|   Rank | Run                        |    ICM |   ICM Norm |
+|-------:|:---------------------------|-------:|-----------:|
+|      0 | BASELINE_gold_standard     |  1.380 |      1.000 |
+|      1 | BASELINE_beto              |  0.126 |      0.546 |
+|      2 | EUA_2                      |  0.065 |      0.524 |
+|      3 | EUA_3                      |  0.061 |      0.522 |
+|      4 | EUA_1                      |  0.045 |      0.516 |
+|      5 | Brigada Lenguaje_1         | -0.240 |      0.413 |
+|      6 | BASELINE_tfidf_svc         | -0.275 |      0.400 |
+|      7 | I2C-Huelva_1               | -0.328 |      0.381 |
+|      8 | BASELINE_fast_text_svc     | -0.412 |      0.351 |
+|      9 | BASELINE_all_zeros         | -0.797 |      0.211 |
+|     10 | BASELINE_random_classifier | -1.056 |      0.117 |
+|     11 | BASELINE_all_ones          | -1.210 |      0.061 |
+|     12 | I2C-Huelva_3               | -1.263 |      0.042 |
+|     13 | I2C-Huelva_2               | -1.403 |      0.000 |
+|     14 | UC3M-SAS_2                 | -2.103 |      0.000 |
+
+## Task 2 with Soft Labels
+
+|   Rank | Run                    |   ICM Soft |   ICM Soft Norm |
+|-------:|:-----------------------|-----------:|----------------:|
+|      0 | BASELINE_gold_standard |      4.651 |           1.000 |
+|      1 | EUA_3                  |     -0.900 |           0.403 |
+|      2 | EUA_1                  |     -0.917 |           0.401 |
+|      3 | EUA_2                  |     -0.969 |           0.396 |
+|      4 | BASELINE_beto          |     -1.124 |           0.379 |
+|      5 | UC3M-SAS_2             |     -1.250 |           0.366 |
+|      6 | Brigada Lenguaje_1     |     -1.684 |           0.319 |
+
 ## References
 
 {: style="font-size: 12px; background-color: #9dd7d124; color: #336b85; padding: 10px; border-radius:
@@ -50,14 +117,6 @@ The baselines and code to produce them can be found at [clic-ub/DETESTS-Dis](htt
 >
 > Cañete, J., Chaperon, G., Fuentes, R., Ho, J. H., Kang, H., & Pérez, J. (2020). Spanish pre-trained
 > bert model and evaluation data. In PML4DC at ICLR 2020.
->
-> Costa, E. P., Lorena, A. C., Carvalho A. C. P. L. F. & Freitas A. (2007). A review of performance
-> evaluation measures for hierarchical classifiers. AAAI Workshop - Technical Report
->
-> Jain, H., Prabhu, Y. & Varma, M. (2016). ‘Extreme multi-label loss functions for recommendation,
-> tagging, ranking & other missing label application. In Proceedings of the 22ndACM SIGKDD International
-> Conference on Knowledge Discovery and Data Mining, KDD ’16, pp. 935–944, New York, NY, USA. Association
-> for Computing Machinery.
 >
 > Leonardelli, E., Uma, A., Abercrombie, G., Almanea, D., Basile, V., Fornaciari, T., Plank, B., Rieser,
 > V., Uma, A., & Poesio, M. (2023). SemEval-2023 Task 11: Learning With Disagreements (LeWiDi). In
