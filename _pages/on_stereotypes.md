@@ -33,7 +33,7 @@ nav_order: 2
         classification subtask in which one of the categories of misogyny is Stereotype
         and Objectification understood as a fixed and oversimplified image or idea of a
         woman.
-        EXIST (Rodríguez-Sánchez et al., 2021; Rodríguez-Sánchez et al., 2021; Plaza et al., 2023) tackled the
+        EXIST (Rodríguez-Sánchez et al., 2021; Rodríguez-Sánchez et al., 2022; Plaza et al., 2023) tackled the
         topic of sexism in social networks, while more specifically, studies on the detection of gender
         stereotypes have also been addressed (Cryan et al., 2020; Chiril, 2021). Among the perspectives
         identifying stereotypes within narratives, there are studies on microportraits, in which a description of
@@ -55,11 +55,6 @@ nav_order: 2
 {: style="font-size: 12px; background-color: #9dd7d124; color: #336b85; padding: 10px; border-radius:
 3px; font-family: monospace; text-align: justify"}
 
-> Cryan, J., Tang, S., Zhang, X., Metzger, M., Zheng, H., and Zhao, B. Y. (2020). ‘Detecting Gender
-> Stereotypes: Lexicon vs. Supervised Learning Methods’. In Proceedings of the 2020 CHI Conference on
-> Human Factors in Computing Systems. Association for Computing Machinery, New York, NY, USA, 1–11. DOI:
-> [https://doi.org/10.1145/3313831.3376488](https://doi.org/10.1145/3313831.3376488)
->
 > Allport, G. W. (1955). The nature of prejudice. Cambridge, Mass: Addison-Wesley Pub. Co.
 >
 > Chiril, P., Benamara, F. & Moriceau, V. (2021). ‘”Be nice to your wife! the restaurants are closed”:
