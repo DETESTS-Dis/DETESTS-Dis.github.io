@@ -37,7 +37,7 @@ nav_order: 2
         topic of sexism in social networks, while more specifically, studies on the detection of gender
         stereotypes have also been addressed (Cryan et al., 2020; Chiril, 2021). Among the perspectives
         identifying stereotypes within narratives, there are studies on microportraits, in which a description of
-        Muslim people is provided in a single text (Fokkens et al., 2018). Sap et al. (2019) addresses the issue
+        Muslim people is provided in a single text (Fokkens et al., 2018). Sap et al. (2020) addresses the issue
         of social bias frames driven by stereotypes. Evalita 2020’s HaSpeeDe 2 task includes a subtask on the
         identification of immigrants, Muslims and Roma (Sanguinetti et al., 2020). Narrowing down on the topic of
         immigration, Sánchez-Junquera et al. (2021) put forward a classification of such stereotypes as
