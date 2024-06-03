@@ -56,6 +56,10 @@ IberLEF 2024, September 2024, Valladolid, Spain.}}
 
     Other uses have to be explicitly mentioned in the paper.
 
+The report, together with the CEUR copyright agreement should be submited to:
+
+**detests.iberlef@gmail.com**
+
 
 
 ## Submission format
