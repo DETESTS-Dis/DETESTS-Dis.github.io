@@ -18,10 +18,12 @@ social: false # includes social icons at the bottom of the page
 
 {% include figure.html path="assets/img/wordcloud.png" class="img-fluid rounded z-depth-1 mx-auto d-block"%}
 
-The DETESTS-Dis task will take place as part of
+[📝 Read the Overview paper](http://journal.sepln.org/sepln/ojs/ojs/index.php/pln/article/view/6620)
+
+The DETESTS-Dis task took place as part of
 [IberLEF 2024](http://sepln2024.infor.uva.es/en/iberlef-en/), the 6th Workshop on Iberian Languages
-Evaluation Forum at [SEPLN 2024 conference](http://sepln2024.infor.uva.es/en/front-page-english/), which
-will be held on September 24th, 2024 in Valladolid (Castilla y León, Spain).
+Evaluation Forum at [SEPLN 2024 conference](http://sepln2024.infor.uva.es/en/front-page-english/),
+held on September 24th, 2024 in Valladolid (Castilla y León, Spain).
 {: style="text-align: justify;"}
 
 One of the components that reinforce toxic and hateful speech are stereotypes. Understanding how they
